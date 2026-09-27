@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Koleksiku - Tambah Koleksi</title>
+</head>
+<body>
+
+    <header>
+        <h1>Koleksiku: Personal Collection Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Daftar Koleksi</a></li>
+                <li><a href="tambah-koleksi.html">Tambah Koleksi Baru</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Form Tambah Barang Koleksi</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                
+                <p>
+                    <label for="nama_item">Nama Barang / Seri:</label><br>
+                    <input type="text" id="nama_item" name="nama_item" placeholder="Contoh: Hot Wheels Nissan Skyline" required>
+                </p>
+
+                <p>
+                    <label for="kategori">Kategori:</label><br>
+                    <select id="kategori" name="kategori" required>
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="diecast">Diecast / Miniatur</option>
+                        <option value="action_figure">Action Figure</option>
+                        <option value="trading_card">Trading Card Game</option>
+                        <option value="sneakers">Sneakers / Sepatu</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="kondisi">Kondisi Barang:</label><br>
+                    <select id="kondisi" name="kondisi" required>
+                        <option value="mib">Mint in Box (MIB)</option>
+                        <option value="near_mint">Near Mint</option>
+                        <option value="loose">Loose (Tanpa Box)</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="tanggal_beli">Tanggal Pembelian:</label><br>
+                    <input type="date" id="tanggal_beli" name="tanggal_beli">
+                </p>
+
+                <p>
+                    <label for="harga_beli">Harga Beli (Rp):</label><br>
+                    <input type="number" id="harga_beli" name="harga_beli" min="0" required>
+                </p>
+
+                <p>
+                    <label for="foto_item">Foto Item Koleksi:</label><br>
+                    <input type="file" id="foto_item" name="foto_item" accept="image/*" required>
+                </p>
+
+                <p>
+                    <label for="catatan">Catatan / Detail Kelangkaan:</label><br>
+                    <textarea id="catatan" name="catatan" rows="4" cols="50" placeholder="Catatan nomor seri, kondisi khusus, atau tempat beli..."></textarea>
+                </p>
+
+                <button type="submit">Simpan Koleksi</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyek Web Fullstack - Personal Collection Tracker</p>
+    </footer>
+
+</body>
+</html>
