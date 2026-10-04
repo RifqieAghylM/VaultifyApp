@@ -1,0 +1,192 @@
+/* ===================================================
+   1. RESET & GENERAL STYLES (Font Properties & Warna)
+   =================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+/* ===================================================
+   2. HEADER & STYLING LIST NAVIGASI
+   =================================================== */
+header {
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Styling List Navigasi (Horizontal di Desktop) */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+nav ul li a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #334155;
+    color: #ffffff;
+}
+
+/* ===================================================
+   3. MAIN CONTENT & DIV / SPAN WRAPPER
+   =================================================== */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Wrapper Card dengan Div */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+/* Span untuk Badge Status */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+/* ===================================================
+   4. STYLING TABEL & FORM (Text-Alignment & Form)
+   =================================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    padding: 0.75rem 1rem;
+    text-align: left; /* Text alignment */
+    border-bottom: 1px solid #e2e8f0;
+}
+
+table th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+    color: #475569;
+}
+
+/* Form Styling */
+form p {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #334155;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+button[type="submit"] {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+/* ===================================================
+   5. FOOTER STYLING
+   =================================================== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #0f172a;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+
+/* ===================================================
+   6. RESPONSIVE DESIGN (@media query dasar)
+   =================================================== */
+/* Mengubah navigasi horizontal menjadi vertikal pada layar HP (< 600px) */
+@media (max-width: 600px) {
+    header {
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Berubah jadi vertikal/tumpuk */
+        gap: 0.5rem;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: center;
+        background-color: #334155;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+}
